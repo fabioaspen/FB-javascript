@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+        let dt = new Date();
+
+        let ndt = new Date(1989,02,15,10,10,10);
+
+        // ndt.setDate(dt.getDate()+2);
+
+        let diasem = ndt.getDay();
+        let dia = ndt.getDate();
+        let mes = ndt.getMonth();
+        let ano = ndt.getFullYear();
+
+        let horas = ndt.getHours();
+        let minutos = ndt.getMinutes();
+        let segundos = ndt.getSeconds();
+        
+
+        let meses = new Array("jan","fev","mar","abr","mai","jun","julh","ago","set","nov");
+
+        let diase = new Array("domingo","segunda","terça","quarta","quinta","sexta","sabado");
+
+        document.write(diase[diasem] + ", " + dia + " de " + meses[mes] + " de " + ano +"<br>");
+        
+        document.write(horas + ":" + minutos + ":" + segundos);
+
+
+    </script>
+</head>
+<body>
+
+</body>
+
+</html> 

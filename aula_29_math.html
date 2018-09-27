@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+        let valor = 60;
+        let mega = [];
+
+        for(let i = 0; i < 6; i++){
+            let sorteio = Math.ceil(Math.random()*valor);
+            mega.push(sorteio);
+        }
+
+        function ordenarNumeros(a,b){
+            return a - b;
+        }
+            
+        mega.sort(ordenarNumeros);
+        console.log(mega);
+        
+        //let mt = Math.random()*valor; //valor aleatorio
+        //let mt = Math.round(valor); // < 5 aredonda para baixo 
+        //let mt = Math.floor(valor); //arredonda para baixo
+        //let mt = Math.ceil(valor); //arredonda para cima
+
+
+        
+    </script>
+</head>
+<body>
+
+</body>
+
+</html> 

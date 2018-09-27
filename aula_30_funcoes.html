@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+        let numeros = [2,3,45,87,55];
+
+        function media(nums){
+            let tam = nums.length;
+            let soma = 0;
+            for(let i = 0; i < tam; i++){
+                soma = soma + nums[i];
+            }
+            return Math.round( soma/tam);
+        }
+        document.write(media(numeros));
+
+        document.write("<hr>");
+
+        function soma(n1,n2){
+            return n1+n2;
+        }
+        document.write(soma(5,8))
+
+        document.write("<hr>");
+
+        function escrever(){
+            document.write("fabio silva");
+        }
+        escrever();
+    </script>
+</head>
+<body>
+
+</body>
+
+</html> 

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+        let nota = 39;
+        let res;
+
+        // aprovado com lovor   >=95
+        // aprovado             >=60
+        // recuperacao          >=40 && <60
+        // reprovado            <40
+        // reprovado com louvor <20
+
+        if (nota >= 95) {
+            res = "Aprovado com louvor";
+        } else if(nota >=60){
+            res = "Aprovado";
+        } else if (nota < 60){
+            res = "recuperação";
+        }else if (nota < 40){
+            res = "reprovado";
+        }else {
+            res = "reprovado com louvor";
+        }
+        
+        document.write(res);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

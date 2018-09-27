@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+
+        let post;
+        let pontos = 700;
+
+            if (pontos >= 1000) {
+                pos = 1;
+            } else if(pontos >= 800) {
+                pos = 2;
+            } else if(pontos >= 600) {
+                pos = 3;
+            }else{
+                pos = 0;
+            }
+
+            switch (pos) {
+                case 1:
+                    msg = "primeiro lugar<br>medalha de ouro";
+                    break;
+                case 2:
+                    msg = "segundo lugar<br>medalha de prata";
+                    break;
+                case 3:
+                    msg = "terceiro lugar<br>medalha de bronze";
+                    break;
+                default:
+                msg = "não foi ao pódio<br>não obteve medalha";
+        }
+        switch (post) {
+                case 1:
+                case 2:  
+                case 3:
+                    msg += "<br> subiu ao podiu";
+                    break;
+                default:
+                msg += "<br> não obteve colocação";
+        }
+            document.write(msg);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

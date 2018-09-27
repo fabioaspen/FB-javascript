@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+        var num;
+        try {
+            num = prompt("Digite um numero");
+            if(num > 10){
+                throw new Error("Valor invalido, valor deve ser menor ou igual a 10<br>");
+            }
+        } catch (e) {
+            console.log("Erro " + e.message);
+            num=10;
+        }finally{
+            document.write("Valor: " + num); 
+            //document.write("<br>Fim do tratamento");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html> 
