@@ -53,9 +53,13 @@
             alert("keydown ativo");
             obj.style.backgroundColor="#f00";
         }
+
+        function inio(){
         document.addEventListener("keydown",move);
         document.addEventListener("click",cor);
-        
+        }
+
+        window.addEventListener("load",inio);
     </script>
 </head>
 <body> 
