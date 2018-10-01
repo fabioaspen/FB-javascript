@@ -6,84 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        #jogador{
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: #00f;
-            width: 50px;
-            height: 50px;
+        #quad{
+            background-color: #f00;
+            border:1px solid #000;
+            width:100px;
+            height: 100px;
         }
     </style>
     <script>
         
-        let jog;
-        let vel;
-        let dx;
-        let dy;
-        let px;
-        let py;
-        let anima;
-        let estado;
+        function contador(min,max){
+            document.write(min+"<br>");
+            if(min < max){
+                contador(++min,max);
+            }
+        }
+        //contador(0,10);
 
-        function inicial(){
-            vel = 3;
-            dx = 1;
-            dy = 0;
-            px = 0;
-            py = 0;
-            estado = 1;
-            jog = document.getElementById("jogador");
-            document.getElementById("in").addEventListener("click",mover);
-            document.getElementById("par").addEventListener("click",parar);
-            game();
-        }
-        
-       /* function moverParar(){
-            if(estado){
-                estado = 0;
-                jog.style.backgroundColor="#f00";
-                cancelAnimationFrame(anima);
-            }else{
-                estado = 1;
-                jog.style.backgroundColor="#00f";
-                anima= requestAnimationFrame(game);
+        function fatorial(n){
+            if(n==1){
+                return 1;
             }
-        }*/
-        function mover(){
-            if(!estado){
-                estado = 1;
-                jog.style.backgroundColor="#00f";
-                anima= requestAnimationFrame(game);
-            }
+            return n*fatorial(n-1);
         }
-        function parar(){
-                estado = 0;
-                jog.style.backgroundColor="#f00";
-                cancelAnimationFrame(anima);
-        }
-        
-        function game(){
-            px += dx*vel;
-           // py += dy*vel;
-            jog.style.left=px+"px";
-            //jog.style.left=py+"px";
-            if(px > 500){
-                dx =-1;
-            }else if(px <0){
-                dx = 1;
-            }
-            anima = requestAnimationFrame(game);
-        }
-        window.addEventListener("load",inicial);
+        //document.write(fatorial(5));
+
     </script>
 </head>
 <body> 
-    <div id="jogador"></div>
-    <br>
-    <br>
-    <br>
-    <button id="in">Iniciar</button>
-    <button id="par">Parar</button>
+    <div id="quad"></div>
+    <script>
+        let obj=document.getElementById("quad");
+        let ang = 0;
+        let anima;
+        function gira(){
+            obj.style.transform="rotate("+ang+"deg)";
+            ang++;
+            if(ang > 360){
+                ang=0;
+            }
+            anima=requestAnimationFrame(gira);
+        }
+        gira();
+    </script>
 </body>
 </html>                                         
