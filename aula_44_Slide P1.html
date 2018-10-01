@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #dvslider{
+            width: 1000px;
+            height: 300px;
+            border: 1px solid #000;
+        }
+    </style>
+    <script>
+        let imgs = [];
+        let slider;
+        let imgAtual;
+        let imgMax;
+        let tmp;
+        let vl;
+        let av;
+
+        function preCarregar(){
+            n = 1;
+            for(let i = 0;i < 5; i++){
+                imgs[i] = new Image();
+                imgs[i].src="imagem/s"+n+".jpg";
+                n++;
+            }
+        }
+        
+        function carregar(img){
+            slider.style.backgroundImage="url('"+imgs[img].src+"')";
+        }
+        function inicia(){
+            preCarregar();
+            imgAtual = 0;
+            imgMax = imgs.length-1;
+            slider = document.getElementById("dvslider");
+            carregar(imgAtual);
+            av = document.getElementById("av");
+            av.addEventListener("click",avanca);
+
+            vl = document.getElementById("vl");
+            vl.addEventListener("click",voltar);
+            
+        }
+
+        function avanca(){
+            imgAtual++;
+            if(imgAtual > imgMax){
+                imgAtual = 0;
+            }
+            carregar(imgAtual);
+        }
+        function voltar(){
+            imgAtual--;
+            if(imgAtual < 0){
+                imgAtual = imgMax;
+            }
+            
+            carregar(imgAtual);
+        }
+
+
+        window.addEventListener("load",inicia);
+        
+        
+    </script>
+</head>
+<body> 
+    <div id="dvslider"></div>
+    <br>
+    <button id="vl">Voltar</button>
+    <button id="av">Avançar</button>
+</body>
+</html>                                         
