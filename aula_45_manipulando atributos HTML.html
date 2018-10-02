@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
+        #carro{
+            width: 200px;
+            height: 379px;
+        }
+        .c1{
+            background-image: url("imagem2/c1.jpg")
+        }
+        .c2{
+            background-image: url("imagem2/c2.jpg")
+        }
+        .c3{
+            background-image: url("imagem2/c3.jpg")
+            
+        }
+
+    </style>
+    <script>
+        /*
+        setAttribute    {Adicionar um atributo}
+        removeAttribute {Remove um atributo}
+        hasAttribute    {Verifica se foi atribuído um atributo a tag}
+        */
+        
+        let obj;
+
+        function trocaCarro(c){
+            obj = document.getElementById("carro");
+            if(c == 1){
+                obj.setAttribute("class","c1");
+            }else if(c == 2){
+                obj.setAttribute("class","c2");
+            }else if(c == 3){
+                obj.setAttribute("class","c3");
+            }
+        }
+
+        function remove(){
+            obj.removeAttribute("class");
+        }
+
+        function verifica(){
+            if(obj.hasAttribute("class")){
+                alert("Atributo tag esta na tag");
+            }else{
+                alert("sem atributo na tag");
+            }
+        }
+        
+    </script>
+</head>
+<body>
+    <button onclick="trocaCarro(1)">Carro 1</button>
+    <button onclick="trocaCarro(2)">Carro 2</button>
+    <button onclick="trocaCarro(3)">Carro 3</button>
+    <button onclick="remove()">Remover</button>
+    <button onclick="verifica()">Verifica</button>
+    <div id="carro"></div>
+    
+</body>
+</html>

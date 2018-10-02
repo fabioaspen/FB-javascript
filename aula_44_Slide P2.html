@@ -30,9 +30,10 @@
             border: 1px solid rgba(255,255,255,0.3);
         }
         #dvbarra{
-            width:0%;
+            width: 0%;
             height: 100%;
             background-color: #f00;
+            background-color: #ffffff;
         }
 
     </style>
@@ -56,6 +57,7 @@
         
         function carregarImg(img){
             slider.style.backgroundImage="url('"+imgs[img].src+"')";
+            slider.style.transition= 1+"s";
         }
 
         function inicia(){
@@ -82,7 +84,7 @@
 
         function anima(){
             tempoTroca++;
-            if(tempoTroca >= 300){
+            if(tempoTroca >= 500){
                 tempoTroca = 0;
                 troca(1);
             }

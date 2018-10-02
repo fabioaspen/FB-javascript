@@ -16,6 +16,8 @@
         }
     </style>
     <script>
+        //requestAnimationFrame  inicia animação
+        //cancelAnimationFrame   cancela animação
         
         let jog;
         let vel;
@@ -44,7 +46,7 @@
             //jog.style.left=py+"px";
             if(px > 500){
                 dx =-1;
-            }else if(px <0){
+            }else if(px < 0){
                 dx = 1;
             }
             anima = requestAnimationFrame(game);

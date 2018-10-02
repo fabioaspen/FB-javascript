@@ -8,15 +8,16 @@
 
     <script>
         var num;
-        try {
+        try {           // Experimentar
             num = prompt("Digite um numero");
             if(num > 10){
                 throw new Error("Valor invalido, valor deve ser menor ou igual a 10<br>");
+                // thow new ( lançar )
             }
-        } catch (e) {
+        } catch (e) {   // Pegar
             console.log("Erro " + e.message);
             num=10;
-        }finally{
+        }finally{       //final
             document.write("Valor: " + num); 
             //document.write("<br>Fim do tratamento");
         }
