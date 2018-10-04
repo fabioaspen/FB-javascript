@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">   
+</head>
+<body>
+    <p id="txt">CFB cursos - curso de Javascript </p>
+
+    <script> 
+        // .indexOf()  retorna o índice de um carácter
+        // .LastIndexOf() retorna o ultimo índice de um carácter  
+        // .locateCompare() localiza e compara se são iguais duas strings
+        // .slice() imprime uma palavra indicando por índice inicial e índice final 
+        // .split() recorta palavras e transforma em vetor
+        //.substr() imprime um palavra indicando índice inicial e onde ela vai terminar
+
+        // .toLowerCase() converte as palavras para minúsculo
+        // toUpperCase() converte as palavras em maiúsculo 
+
+        let texto = document.getElementById("txt").innerHTML;    
+        
+        let res = texto.slice(3,10)
+
+        document.write(res);
+    </script>
+</body>
+</html>

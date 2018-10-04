@@ -31,7 +31,7 @@
             dy=0;
             px=0;
             py=0;
-            vel=10;
+            esp=10;
             obj=document.getElementById("dv1");
             document.addEventListener("keydown",teclaDw);
             document.addEventListener("keyup", teclaUp);
@@ -64,8 +64,8 @@
         }
         
         function enterFrame(){
-            px+=dx*vel;
-            py+=dy*vel;
+            px+=dx*esp;
+            py+=dy*esp;
             obj.style.left=px+"px";
             obj.style.top=py+"px";
         }

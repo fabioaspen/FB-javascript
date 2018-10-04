@@ -7,12 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">   
 </head>
 <body>
-    <p id="txt" style="color: #1d4c8a" >CFB cursos - curso de javascript - aula 46 do curso de javascript</p>
+    <p id="txt">CFB cursos - curso de Javascript - aula 46 do curso de javascript</p>
 
-    <script>
+    <script> 
 
         let texto = document.getElementById("txt").innerHTML;    
         
+        let res = texto.match(/java/ig);
+
+        document.write(res + " : " + res.length + "<br>");
+
+        document.write(res[1]);
     </script>
 </body>
 </html>

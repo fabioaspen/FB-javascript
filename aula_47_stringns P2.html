@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">   
+</head>
+<body>
+    <p id="txt">CFB cursos - curso de Javascript </p>
+
+    <script> 
+        // .match()  pesquisa elementos dentro de um testo
+        // .search() pesquisa qual posição a palavra começa
+        // .replace() substitui palavras
+        // .charAt() retorna a positão do elemento através do índice
+        // .charCodAt() retorna o código do carácter
+        //.concat() concatena dos variáveis ou com elementos
+
+        let texto = document.getElementById("txt").innerHTML;    
+        let texto2 = "- aula 46 do curso de javascript"   
+        
+        let res = texto.concat(texto2);
+
+        document.write(res);
+    </script>
+</body>
+</html>
