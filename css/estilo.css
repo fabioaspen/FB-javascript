@@ -3,7 +3,7 @@
     font-size: 30px;
     text-transform:uppercase;
     text-align: center;
-    display: none;
+    display: ;
 }
 .letraJ{
     width: 30px;
@@ -31,8 +31,8 @@
 }
 #bracoE{
     position: absolute;
-    top: 220px;
-    left: -17px;
+    top: 218px;
+    left: -35px;
 }
 #bracoD{
     position: absolute;
@@ -41,11 +41,11 @@
 }
 #pernaE{
     position: absolute;
-    top: 450px;
-    left: -60px;
+    top: 420px;
+    left: -50px;
 }
 #pernaD{
     position: absolute;
-    top: 450px;
-    left: 105px;
+    top: 420px;
+    left: 115px;
 }

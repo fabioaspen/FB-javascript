@@ -51,7 +51,7 @@ function jogar(){
                 if(erros<7){
                     desenhos[erros].style.display="block";
                 }else{
-                    document.getElementById("cabeca").src="cabeca2.png";
+                    document.getElementById("cabeca").src="imagem3/cabeca2.png";
                     document.getElementById("dvmsg").innerHTML="PERDEU";
                     jogando=false;
                 }
