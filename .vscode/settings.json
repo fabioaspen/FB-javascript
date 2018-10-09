@@ -3,6 +3,8 @@
         "dvdisplay",
         "dvjogador",
         "dvpalavra",
-        "dvslider"
+        "dvslider",
+        "pesq",
+        "posjogo"
     ]
 }

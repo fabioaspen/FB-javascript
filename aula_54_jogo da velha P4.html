@@ -84,13 +84,13 @@
                         l=Math.round(Math.random()*2);
                         c=Math.round(Math.random()*2);
                     }while(jogo[l][c]!="");
-                    jogo[1][c]="O";
+                    jogo[l][c]="O";
                 }else if(nivel==2){
                     //nivel2
                 }
                 verifica = verificarvitoria();
                 if(verifica!=""){
-                    alert(verifica+" venceu");
+                    alert(verifica +" venceu");
                     jogando = false;
                 }
                 atualizaTabuleiro();
@@ -200,7 +200,7 @@
             for(let l =0;l < 3;l++){        //Pecorre linha de array (tabuleiro)
                 for(let c =0;c < 3;c++){    //Pecorre coluna de array (tabuleiro)
                     if(jogo[l][c]=="X"){
-                        tabuleiro[l][c].innerHTML="x";
+                        tabuleiro[l][c].innerHTML="X";
                         tabuleiro[l][c].style.cursor="default";
                     }else if(jogo[l][c]=="O"){
                         tabuleiro[l][c].innerHTML="O";

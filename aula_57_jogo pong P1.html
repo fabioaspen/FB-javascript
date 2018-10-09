@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            background-color: #aaaa;
+        }
+        #dvpainel{
+            display: flex;
+            height: 50px;
+            align-items: center;
+        }
+        .itempainel{
+            margin:5px;
+        }
+        #dvjogo{
+            width: 960px;
+            height: 500px;
+            border: 1px solid #000;
+            background-color: #000;
+        }
+        #dvbola{
+            position: absolute;
+            top: 240px;
+            left: 475px;
+            width: 20px;
+            height: 20px;
+            background-color: #888;
+        }
+        .barra{
+            position: absolute;
+            width: 20px;
+            height: 140px;
+            background-color: #888;
+            top: 180px;
+        }
+        .esquerda{
+            left:10px;
+        }
+        .direita{
+            left:930px;
+        }
+
+    </style>
+    <script>
+        
+        //elementos
+        let vbtiniciar;
+        let vbola;
+        let vcpu;
+        let vjogador;
+        let vpaineltxtpontos
+
+        //controle de animação
+        let game,frames;
+
+        //posições
+        let posbolax, posbolay;
+        let posjogadorx, posjogadory;
+        let poscpux, poscpuy;
+
+        //direção da posição com a tecla
+        let dirjy;
+
+        //posiçoes iniciais
+        let posjoginiy = 180, poscpuiniy = 180, posbolainix = 475, pobolainiy = 240;
+
+        //tamanhos
+        let campox=0,campoy=0,campow=960,compoh=500;
+        let barraw=20,barrah=140,bolaw=20,bolah=20;
+
+        //direção
+        let bolax, bolay;
+        let jogy = 0; cpuy = 0;
+
+        //velocidade
+        let velbola,velcpu,veljogador;
+
+        //controle
+        let pontos=0;
+        let tecla;
+
+    </script>
+</head>
+
+<body>
+    <div id="dvjogo">
+        <div id="dvbola"></div>
+        <div id="dvjogador" class="barra esquerda"></div>
+        <div id="dvcpu" class="barra direita"></div>
+    </div>
+    <div id="dvpainel">
+        <div class="itempainel">
+            <label>Pontos</label>
+            <input type="text" id="txtpontos" value="0" size="10">
+        </div>
+        <div class="itempainel">
+            <button id="btiniciar">Iniciar</button>
+        </div>
+    </div>    
+</body>
+</html>
