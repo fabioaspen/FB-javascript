@@ -57,7 +57,7 @@
         let vpaineltxtpontos
 
         //controle de animação
-        let game,frames;
+        let game2,frames;
 
         //posições
         let posbolax, posbolay;
@@ -68,7 +68,7 @@
         let dirjy;
 
         //posiçoes iniciais
-        let posjoginiy = 180, poscpuiniy = 180, posbolainix = 475, pobolainiy = 240;
+        let posjoginiy = 180, poscpuiniy = 180, posbolainix = 475, posbolainiy = 240;
 
         //tamanhos
         let campox=0,campoy=0,campow=960,compoh=500;
@@ -76,7 +76,7 @@
 
         //direção
         let bolax, bolay;
-        let jogy = 0; cpuy = 0;
+        let cpuy = 0;
 
         //velocidade
         let velbola,velcpu,veljogador;
@@ -84,7 +84,66 @@
         //controle
         let pontos=0;
         let tecla;
+        let jogo=false;
 
+        function controlajog(){
+            if(jogo){
+                posjogadory += veljogador*dirjy;
+                vjogador.style.top=posjogadory+"px";
+            }
+        }
+        
+        function tecladw(){
+            tecla = event.keyCode;
+            if(tecla== 38){
+                dirjy = -1;
+            }else if(tecla == 40){
+                dirjy =+ 1;
+            }
+        }
+
+        function teclaup(){
+            tecla = event.keyCode;
+            if(tecla == 38){
+                dirjy = 0;
+            }else if(tecla == 40){
+                dirjy = 0;
+            }
+        }
+
+        function game(){
+            if(jogo){
+                controlajog();
+            }
+            frames = requestAnimationFrame(game);
+        }
+        
+        function iniciajogo(){
+            if(!jogo){
+                cancelAnimationFrame(frames);
+                jogo = true;
+                dirjy = 0;
+                posbolax = posbolainix;
+                posbolay = posbolainiy;
+                posjogadory = 0;
+                poscpuy = poscpuiniy;
+                game();
+            }
+        }
+
+        function inicializa(){
+            velbola=velcpu=veljogador=8;
+            vbtiniciar = document.getElementById("btiniciar");
+            vbtiniciar.addEventListener("click",iniciajogo);
+            vjogador = document.getElementById("dvjogador");
+            vcpu = document.getElementById("dvcpu");
+            vbola = document.getElementById("dvbola");
+            vpaineltxtpontos = document.getElementById("txtpontos");
+            document.addEventListener("keydown",tecladw);
+            document.addEventListener("keyup",teclaup);
+        }
+
+        window.addEventListener("load",inicializa);
     </script>
 </head>
 
