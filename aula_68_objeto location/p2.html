@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #f00;
+            color: #fff;
+        }
+        a{
+            color: #fff;
+        }
+    </style>
+    <script>
+
+        let aux = location.hash;
+        //document.write(aux + "<hr>");
+        let dados = aux.split("#");
+        let v1 = dados[1];
+        let v2= dados[2];
+        document.write(v1);
+        document.write("<br>");
+        //let h=location.hostname;
+        let h=location.href;
+        document.write(h);
+        document.write("<hr>")
+
+        let o=location.origin;
+        document.write(o);
+        document.write("<hr>")
+
+        let p=location.pathname;
+        document.write(p);
+        document.write("<hr>")
+
+        let d=location.port;
+        document.write(d);
+        document.write("<hr>")
+
+        let pr=location.protocol;
+        document.write(pr);
+        document.write("<hr>")
+
+        aux = location.search;
+        dados = aux.split("?");
+        v1 = dados[1];
+        document.write(v1);
+        document.write("<br>");
+
+
+    </script>
+</head>
+<body>
+    <h1>Página 2 - p2.html</h1>
+
+    <a href="aula68.html">Voltar</a>
+
+</body>
+</html>
