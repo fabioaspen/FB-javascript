@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+
+        if(typeof(Storage)!= undefined){
+            if(localStorage.visitas){
+                localStorage.visitas = Number(localStorage.visitas)+1;
+            }else{
+                //localStorage.setItem("visita",1);
+                localStorage.visitas=1;
+            }
+            document.write("Visitas: " + localStorage.visitas);
+        }else {
+            document.write("Sem suporte para Webstorege!");
+        } 
+
+        /*
+        if(typeof(Storage)!= undefined){
+            localStorage.setItem("canal", "CFB cursos");    //cria o item
+            //localStorage.removeItem("canal");             //Deleta o item
+            //let canal = localStorage.getItem("canal");    //Pega o valor do store pelo seu key
+            let vcanal = localStorage.canal;                //Pega o valor do store pelo seu key
+
+            document.write(canal);
+        }else {
+            document.write("Sem suporte para Webstorege!");
+        } 
+        */
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

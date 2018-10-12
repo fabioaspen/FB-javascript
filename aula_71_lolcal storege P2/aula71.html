@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #fconf{
+            position: absolute;
+            top: 0;
+            left:0;
+            border: 1px solid #000;
+            background-color: #888;
+            padding: 20px;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+    <script>
+
+        let vcorf,vcort,vnome,form;      
+
+        function inicia(){    
+            if(localStorage.nome){
+                vcorf = localStorage.corf;
+                vcort = localStorage.cort;
+                vnome = localStorage.nome;
+                definircor(1,vcorf);
+                definircor(2,vcort);
+                document.getElementById("painel").innerHTML="Bem vindo " + vnome + "<hr>";
+            }
+        }      
+
+        function gravar(){
+            vnome = document.getElementById("fnome").value;
+            localStorage.setItem("corf",vcorf);
+            localStorage.cort=vcort;
+            localStorage.nome=vnome;
+            form.style.display="none";
+        }
+        
+        function definircor(op,cor){
+            if(op==1){
+                document.body.style.backgroundColor=cor;
+                vcorf = cor;
+            }else{
+                document.body.style.color=cor;
+                vcort = cor;
+            }
+        }
+
+        function mostrarconf(){
+            form = document.getElementById("fconf");
+            form.style.display="block";
+        }
+
+        window.addEventListener("load",inicia);
+
+    </script>
+</head>
+<body>
+
+    <p>LocalStorage - Curso de javascript</p>
+
+    <p id="painel"></p>
+
+    <button onclick="mostrarconf()">Configuraçoes</button>
+
+    <form name="dados" id="fconf">
+        <label>Nome</label><br>
+        <input type="text" name="fnome" id="fnome" size="20"><br><br>
+        <label>Cor fundo:</label><br>
+        <input type="radio" name="fcorf" onclick="definircor(1, '#000')">Preto<br>
+        <input type="radio" name="fcorf" onclick="definircor(1, '#fff')">Branco<br>
+        <input type="radio" name="fcorf" onclick="definircor(1, '#f00')">Vermelho<br>
+        <input type="radio" name="fcorf" onclick="definircor(1, '#0f0')">verde<br>
+        <input type="radio" name="fcorf" onclick="definircor(1, '#00f')">Azul<br><br>
+        <label>Cor texto</label><br>
+        <input type="radio" name="fcort" onclick="definircor(2, '#000')">Preto<br>
+        <input type="radio" name="fcort" onclick="definircor(2, '#fff')">Branco<br><br>
+        <input type="button" value="gravar" onclick="gravar()">
+    </form>
+</body>
+</html>

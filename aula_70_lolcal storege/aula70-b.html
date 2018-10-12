@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+
+        let vcorf,vcort,vnome;        
+
+        function gravar(){
+            vnome = document.getElementById("fnome").value;
+            localStorage.corf=vcorf;
+            localStorage.cort=vcort;
+            localStorage.nome=vnome;
+        }
+        
+        function definircor(op,cor){
+            if(op==1){
+                document.body.style.backgroundColor=cor;
+                vcorf = cor;
+            }else{
+                document.body.style.color=cor;
+                vcort = cor;
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <p>localStorage - Curso de javascript</p>
+    <form name="dados">
+        <label>Nome</label><br>
+        <input type="text" name="fnome" id="fnome" size="20"><br><br>
+        <label>Cor fundo:</label><br>
+        <input type="radio" name="fcorf" onclick="definircor(1, '#000')">Preto<br>
+        <input type="radio" name="fcorf" onclick="definircor(1, '#fff')">Branco<br>
+        <input type="radio" name="fcorf" onclick="definircor(1, '#f00')">Vermelho<br>
+        <input type="radio" name="fcorf" onclick="definircor(1, '#0f0')">verde<br>
+        <input type="radio" name="fcorf" onclick="definircor(1, '#00f')">Azul<br><br>
+        <label>Cor texto</label><br>
+        <input type="radio" name="fcort" onclick="definircor(2, '#000')">Preto<br>
+        <input type="radio" name="fcort" onclick="definircor(2, '#fff')">Branco<br><br>
+        <input type="button" value="gravar" onclick="gravar()">
+    </form>
+</body>
+</html>
