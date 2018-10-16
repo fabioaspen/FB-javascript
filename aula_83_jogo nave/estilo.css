@@ -1,0 +1,50 @@
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #ffffff;
+}
+
+.navjog{
+    width: 60px;
+    height: 60px;
+    background-image: url("imagem/foguete.gif");
+    background-size: 60px 60px;
+    position: absolute; 
+}
+
+.telamsg{
+    position: absolute;
+    margin-left: -25%;
+    top: 50px;
+    left: 50%;
+    width: 720px;
+    height: 621px;
+    display: none;
+}
+
+#medidorplaneta{
+    border: 2px solid #000;
+    width: 300px;
+    height: 20px;
+    background: #ffffff;
+}
+#barraplaneta{
+    width: 300px;
+    height: 20px;
+    background: #55ff;
+}
+.tirojog{
+    width: 6px;
+    height: 6px;
+    background-color: #000;
+    border-radius: 6px;
+    position: absolute;
+}
+
+.bomba{
+    width: 60px;
+    height: 60px;
+    background-image: url("imagem/missel.gif");
+    background-size: 60px 60px;
+    position: absolute;
+}

@@ -1,4 +1,7 @@
-let diryj,dirxj;
+let diryj,dirxj,jog,velj,pjx,pjy;
+let tamtelaw,tamtelah;
+let jogo;
+let frames;
 
 function tecladw(){
     let tecla = event.keyCode;
@@ -25,12 +28,32 @@ function teclaup(){
     }
 }
 
-function gameloop(){
+function controlajogador(){
 
 }
 
-function inicia(){
+function gameloop(){
+    if(jogo){
+        //Funçoes de controle
+    }
+    frames = requestAnimationFrame(gameloop);
+}
 
+function inicia(){
+    jogo = false;
+
+    //ini tela
+    tamtelah = window.innerHeight;
+    tamtelaw = window.innerWidth;
+
+    //ini jogador
+    dirxj=diryj=0;
+    pjx = tamtelaw/2;
+    pjy = tamtelah/2;
+    velj = 5;
+    jog = document.getElementById("navejog");
+    jog.style.top=pjy +"px";
+    jog.style.left=pjx +"px";
 }
 
 window.addEventListener("load",inicia);
