@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    
+        function inicia(){
+            let novoh1 = document.createElement("h1");
+            let listacursos = document.getElementById("cfbcursos");
+            let antigop = listacursos.childNodes[7];
+            let txth = document.createTextNode(antigop.innerHTML);
+            novoh1.appendChild(txth);
+            listacursos.replaceChild(novoh1,antigop);
+        }
+
+        window.addEventListener("load",inicia);
+
+    </script>
+</head>
+<body>
+
+    <div id="cfbcursos">
+        <p>Curso de Javascript</p>
+        <p>Curso de Html/Html5</p>
+        <p>Curso de CSS3</p>
+        <p>Curso de PHP/MYSQL</p>
+        <p>Curso de C++</p>
+        <p>Curso de Photoshop</p>
+        <p>Curso de Unity</p>
+        <p>Curso de flash</p>
+    </div> 
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        /*
+        let p = document.createElement("p");
+        //p.textContent="CBF cursos";
+        let t = document.createTextNode("Curso java");
+
+        function inicia(){
+            p.appendChild(t);
+            document.body.appendChild(p);
+        }
+        */
+        function adicionar(){
+            let lista = document.getElementById("listaelementos");
+            let texto = document.getElementById("fnovo");
+            let li = document.createElement("li");
+            li.textContent=texto.value;
+            lista.appendChild(li);
+            texto.value="";
+            texto.focus();
+        }
+
+        function inicia(){
+            document.getElementById("btnadd").addEventListener("click",adicionar);
+        }
+
+        window.addEventListener("load",inicia);
+
+    </script>
+</head>
+<body>
+    
+    <input type="text" id="fnovo"><button id="btnadd">Adicionar</button><br><br>
+
+    <ul id="listaelementos">
+
+    </ul>
+</body>
+</html>

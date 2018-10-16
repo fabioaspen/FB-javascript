@@ -1,0 +1,22 @@
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #ffffff;
+}
+
+.navjog{
+    width: 40px;
+    height: 40px;
+    background-image: url("imagem/foguete.gif");
+    position: absolute; 
+}
+
+.telamsg{
+    position: absolute;
+    margin-left: -25%;
+    top: 50%;
+    left: 50%;
+    width: 720px;
+    height: 621px;
+    display: 
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    
+        function inicia(){
+            document.getElementById("btndestaque").addEventListener("click",function(){
+                let num = document.getElementById("fnum").value;
+                let p = document.getElementsByTagName("p");
+                for(i = 0;i < p.length;i++){
+                    p[i].removeAttribute("style");
+                }
+                let at = document.createAttribute("style");
+                at.value = "color:#f00;font-size:30px";
+                p[num].setAttributeNode(at);
+            });
+        }
+
+        window.addEventListener("load",inicia);
+
+    </script>
+</head>
+<body>
+    <input type="text" id="fnum"><button id="btndestaque">Destaque</button><br><br>
+
+    <p>Curos de Javascript</p>
+    <p>Curos de Html/Html5</p>
+    <p>Curos de CSS3</p>
+    <p>Curos de PHP/MYSQL</p>
+    <p>Curos de C++</p>
+    <p>Curos de Photoshop</p>
+    <p>Curos de Unity</p>
+    <p>Curos de flash</p>
+</body>
+</html>
