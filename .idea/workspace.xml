@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7417cf0a-ecf7-4c59-9870-1bbb8da72e1f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/aula_57_jogo pong P1.html" beforeDir="false" afterPath="$PROJECT_DIR$/aula_57_jogo pong P1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,12 +12,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="aula_59_jogo pong P3.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/aula_59_jogo pong P3.html">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="javascript.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/aula_84_jogo nave/javascript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-504">
-              <caret line="78" selection-start-line="78" selection-end-line="78" />
+            <state relative-caret-position="562">
+              <caret line="108" column="5" lean-forward="true" selection-start-line="108" selection-start-column="5" selection-end-line="108" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -31,6 +31,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/aula_59_jogo pong P3.html" />
+        <option value="$PROJECT_DIR$/aula_84_jogo nave/javascript.js" />
       </list>
     </option>
   </component>
@@ -55,7 +56,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="264" />
+    <option name="x" value="1864" />
+    <option name="y" value="104" />
     <option name="width" value="872" />
     <option name="height" value="745" />
   </component>
@@ -64,6 +66,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -71,11 +74,15 @@
               <item name="Fbcursos" type="b2602c69:ProjectViewProjectNode" />
               <item name="Fbcursos" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="Fbcursos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Fbcursos" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="aula_84_jogo nave" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -113,35 +120,36 @@
       <option name="presentableId" value="Default" />
       <updated>1539096257033</updated>
       <workItem from="1539096260130" duration="358000" />
+      <workItem from="1539718342070" duration="705000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="358000" />
+    <option name="totallyTimeSpent" value="1063000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="1358" y="-8" width="1936" height="1096" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="right" id="Remote Host" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16111952" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="right" id="Remote Host" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11513859" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,8 +161,16 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/aula_59_jogo pong P3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-504">
+        <state relative-caret-position="1638">
           <caret line="78" selection-start-line="78" selection-end-line="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aula_59_jogo pong P3.html" />
+    <entry file="file://$PROJECT_DIR$/aula_84_jogo nave/javascript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="108" column="5" lean-forward="true" selection-start-line="108" selection-start-column="5" selection-end-line="108" selection-end-column="5" />
         </state>
       </provider>
     </entry>

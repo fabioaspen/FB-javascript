@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <script>
+            
+            function ativo(){
+                let cx = document.getElementById("texto_selecionado");
+                let elemento = document.activeElement;
+                let selecao = elemento.value.substring(elemento.selectionStart,elemento.selectionEnd);
+                cx.innerHTML = selecao;
+            }
+            function inicia(){
+                let texto = document.getElementById("txt-original");
+                texto.addEventListener("mouseup",ativo);
+            }
+            
+            window.addEventListener("load",inicia);
+
+        </script>
+    </head>
+    <body>
+
+        <textarea rows="5" cols="20" id="txt-original">CFB cursos - javascript</textarea><br>
+        Texto selecionado:<span id="texto_selecionado"></span>
+
+    </body>
+</html>

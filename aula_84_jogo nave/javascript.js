@@ -142,7 +142,7 @@ function inicia(){
     jog.style.top = pjy + "px";
     jog.style.left = pjx + "px";
 
-    //contorle das bombas
+    //controle das bombas
     clearInterval(tmpcriabomba);
     contbomba = 150;
     velb = 2;

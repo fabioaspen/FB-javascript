@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #painel{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.8);
+            top: 0;
+            left: 0;
+            position: absolute;
+            display: none;
+        }
+    </style>
+    <script>
+        setInterval(foco,0);
+
+        function foco(){
+            let painel = document.getElementById("painel");
+            let res = document.getElementById("simnao");
+            if(document.hasFocus()){
+                res.innerHTML="";
+                painel.style.display="none";
+            }else{
+                res.innerHTML=">>Não<<";
+                painel.style.display="block";
+            }
+        }
+        URL("")
+    </script>
+</head>
+<body>
+    <idv id="painel"></idv>
+    <div id="dvmsg">Página <span id="simnao"></span>está em focus</div>
+    <img src="LOGO3-CFB-SITE-450x155.png">
+</body>
+</html>
